@@ -24,6 +24,12 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+console.log('Before:', Promise.prototype.finally.toString());
+
+const StoryBook = require('./storybook');
+
+console.log('After:', Promise.prototype.finally);
+
 const App: () => React$Node = () => {
   return (
     <>
@@ -111,4 +117,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default StoryBook;
